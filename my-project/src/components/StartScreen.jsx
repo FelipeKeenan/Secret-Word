@@ -13,6 +13,7 @@ const StartScreen = ({ startGame }) => {
             </div>
             <p className="my-4 text-[#ecfa00]">Clique no botão abaixo para começar a jogar</p>
             <button onClick={startGame} className="btn">Jogar</button>
+            <span><a className="underline block mt-3" target='_nblank' href="https://www.linkedin.com/in/felipe-keenan/">Created by Felipe Keenan</a></span>
         </div>
     )
 }
