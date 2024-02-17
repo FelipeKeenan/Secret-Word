@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply text-white px-10 border-2 bg-[#4b24a2] border-white rounded-3xl h-12 uppercase cursor-pointer text-2xl transition duration-300 hover:bg-[#3a2666];
+}
+
+
+.input-letters {
+    @apply border-[5px] border-black p-7 w-6 h-6 text-5xl flex justify-center items-center uppercase text-black font-bold bg-white md:p-4 sm:p-3
+}
+
+.data-state {
+    @apply text-yellow-300 font-bold text-2xl;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #735db6, #442b93);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-border {
+    margin: -5px;
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.w-customize::before {
+    content: "W";
+    color: #ecfa00;
+    font-size: 2rem;
+}
+
+.w-customize::after {
+    content: url('../public/cadeado.png');
+    position: relative; /* Adicione esta linha para tornar o posicionamento relativo */
+    top: 0.1em; /* Ajuste a posição vertical conforme necessário */
+    margin-left: 0.05em;
+}
+.li-style{
+    @apply mb-2 list-disc;
+}
+
+.responsive-size{
+    @apply px-6
+}
